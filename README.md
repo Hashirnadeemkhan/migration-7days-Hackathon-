@@ -60,3 +60,57 @@ This project demonstrates how to import external API data into Sanity CMS, creat
    };
 
    export default cars;
+
+
+# Day 6 - Deployment Preparation and Staging Environment Setup
+
+**Prepared by:** Ameen Alam  
+**First Published:** January 21, 2025  
+**Version:** 6.0  
+
+---
+
+## **Objective**
+The goal of Day 6 is to prepare the marketplace application for deployment by:
+- Setting up a staging environment.
+- Configuring hosting platforms and environment variables securely.
+- Testing functionality, performance, and security in a production-like environment.
+
+---
+
+## **Key Deliverables**
+1. Fully deployed staging environment for the marketplace.
+2. Secure configuration of environment variables.
+3. Documentation of testing results and performance reports.
+4. Organized project repository with structured files and a README file.
+
+---
+
+## **Steps for Implementation**
+
+### 1. **Hosting Platform Setup**
+- **Choose a Platform**: Selected [Vercel](https://vercel.com) for its ease of use and seamless integration with GitHub.
+- **Connect Repository**: 
+  - Linked the GitHub repository to Vercel.
+  - Configured build and deployment settings.
+
+### 2. **Environment Variable Configuration**
+- Created a `.env` file containing sensitive variables:
+![image](https://github.com/user-attachments/assets/a892e055-1efc-4b71-a902-695dfc79fd45)
+
+### 3. **Deployment to Staging**
+https://hackathon-ecommerce-n63n.vercel.app/
+
+### 4. **Staging Environment Testing**
+Performance Testing: Used GTmetrix to analyze load times, speed, and responsiveness.
+Performance Metrics Achieved:
+Page Speed Score: 92%
+Fully Loaded Time: 2.1 seconds.
+Security Testing: Validated input fields, ensured HTTPS, and tested API key protection.
+
+**link** :https://gtmetrix.com/reports/hackathon-ecommerce-n63n.vercel.app/X6QUu3V8/
+
+
+
+
+
