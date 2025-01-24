@@ -1,4 +1,145 @@
-# Car Data Import and Sanity Integration
+# Rent a Car - Hackathon Day 2: Planning the Technical Foundation
+
+## 1. Technical Requirements
+
+### Frontend Requirements
+- **User-friendly interface** for browsing and booking cars.
+- **Responsive design** for both mobile and desktop platforms.
+- Essential pages:
+  - Home
+  - Car Listing
+  - Car Details
+  - Booking
+  - Checkout
+  - Confirmation
+
+### Backend Requirements
+- **Sanity CMS** to manage data for cars, users, bookings, and providers.
+- Integration of APIs for:
+  - Payment processing
+  - Booking management
+  - Car availability
+
+### APIs
+- **Third-party APIs** will handle:
+  - Payment gateway
+  - Real-time tracking (if needed)
+  - User authentication
+
+---
+
+## 2. System Architecture
+
+### High-Level Overview
+- **Frontend (Next.js):** Handles user interaction for browsing cars and managing bookings.
+- **Sanity CMS:** Acts as the backend for managing:
+  - Car data
+  - User information
+  - Bookings
+- **Third-Party APIs:**
+  - Payment Gateway for secure transactions
+  - Optional tracking services for car availability or delivery logistics
+
+---
+
+## 3. Workflows and Flowcharts
+
+### Workflows
+
+#### 2. Car Browsing
+- **Flow:**
+  1. User views car categories.
+  2. CMS API fetches car data.
+  3. Car details are displayed dynamically on the frontend.
+
+#### 3. Booking Process
+- **Flow:**
+  1. User selects a car.
+  2. Proceeds to checkout.
+  3. Booking details are saved in the CMS.
+
+#### 4. Payment and Confirmation
+- **Flow:**
+  1. Payment is processed via the Payment Gateway.
+  2. Confirmation email is sent to the user.
+  3. Booking status is updated in the CMS.
+
+---
+
+## 4. API Design
+
+### 1. Fetch Cars
+- **Endpoint:** `/cars`
+- **Method:** GET
+- **Response:**
+  ```json
+  {
+    "CarID": 1,
+    "Model": "Toyota Prius",
+    "PricePerDay": 50
+  }
+  ```
+
+### 2. Create Booking
+- **Endpoint:** `/bookings`
+- **Method:** POST
+- **Payload:**
+  ```json
+  {
+    "UserID": 1,
+    "CarID": 2,
+    "StartDate": "2025-01-20",
+    "EndDate": "2025-01-25"
+  }
+  ```
+
+### 3. Process Payment
+- **Endpoint:** `/payment`
+- **Method:** POST
+- **Payload:**
+  ```json
+  {
+    "BookingID": 101,
+    "Amount": 250
+  }
+  ```
+
+---
+
+## 5. Flowcharts
+
+### System Architecture Flowchart
+This flowchart represents the workflow for the overall system architecture, highlighting interactions between:
+- Frontend (Next.js)
+- Sanity CMS
+- Third-party APIs
+
+
+### Product Browsing Workflow
+This flowchart represents the workflow for product browsing:
+- Fetching car data from the CMS API
+- Displaying dynamic car listings on the frontend
+
+### Order Placement Workflow
+This flowchart represents the workflow for placing an order:
+- Selecting a car
+- Proceeding to checkout
+- Saving booking details in the CMS
+
+### Shipment Tracking Workflow
+This flowchart represents the workflow for shipment tracking (if applicable):
+- Real-time tracking via third-party APIs
+- Displaying tracking information to the user
+
+---
+
+## Summary
+
+Day 2 focuses on converting business goals into technical foundations. By defining frontend and backend requirements, creating detailed workflows, and designing APIs, the "Rent a Car" platform lays the groundwork for a user-friendly and efficient car rental experience.
+
+
+
+# Day 3 - Car Data Import and Sanity Integration
 
 This project demonstrates how to import external API data into Sanity CMS, create a schema for the imported data, and display it in a React-based frontend. The project was implemented as part of a provided hackathon template.
 
