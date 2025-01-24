@@ -91,7 +91,7 @@ The goal of Day 6 is to prepare the marketplace application for deployment by:
 ### 1. **Hosting Platform Setup**
 - **Choose a Platform**: Selected [Vercel](https://vercel.com) for its ease of use and seamless integration with GitHub.
 - **Connect Repository**: 
-  - Linked the GitHub repository to Vercel.
+ [ - Linked the GitHub repository to Vercel.](https://github.com/Hashirnadeemkhan/hackathon-ecommerce)
   - Configured build and deployment settings.
 
 ### 2. **Environment Variable Configuration**
